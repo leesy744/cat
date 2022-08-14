@@ -2,7 +2,7 @@ import React from "react";
 
 const Question = () => {
     return (
-        <div>홈화면</div>
+        <div>질문화면</div>
     )
 }
 

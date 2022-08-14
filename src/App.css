@@ -1,0 +1,8 @@
+/* font 적용하기 */
+.App {
+    font-family: "Mabinogi";
+}
+@font-face {
+    font-family: "Mabinogi";
+    src: url(/src/assets/fonts/Mabinogi_Classic_TTF.ttf);
+}

@@ -2,7 +2,7 @@ import React from "react";
 
 const Result = () => {
     return (
-        <div>홈화면</div>
+        <div>결과화면</div>
     )
 }
 

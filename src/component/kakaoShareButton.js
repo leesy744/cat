@@ -2,7 +2,7 @@ import React from 'react';
 import  Button  from "react-bootstrap/Button";
 const {Kakao} = window;
 
-const KakaoShareButton = () => {
+const KakaoShareButton = ({data}) => {
     const url = "https://lovelycat.netlify.app/"
     const resultUrl = window.location.href; //url 주소 받아오기 위한 것
 
@@ -23,12 +23,12 @@ const KakaoShareButton = () => {
         objectType: 'feed',
         content: {
           title: '테스트 결과',
-          description: '나와 잘 맞는 고양이는 ㅇㅇㅇ 입니다',
+          description: `나와 잘 맞는 고양이는 ${data.name} 입니다`,
           imageUrl:
-            'https://mud-kage.kakao.com/dn/NTmhS/btqfEUdFAUf/FjKzkZsnoeE4o19klTOVI1/openlink_640x640s.jpg',
+            url + data.image,
           link: {
-            mobileWebUrl: 'https://developers.kakao.com',
-            androidExecutionParams: 'test',
+            mobileWebUrl: resultUrl,
+            webUrl: resultUrl,
           },
         },
         buttons: [
@@ -36,6 +36,7 @@ const KakaoShareButton = () => {
             title: '테스트 하러 가기',
             link: {
               mobileWebUrl: url,
+              webUrl : url,
             },
           },
         ]

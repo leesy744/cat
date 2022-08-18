@@ -3,12 +3,12 @@ import  Button  from "react-bootstrap/Button";
 const {Kakao} = window;
 
 const KakaoShareButton = () => {
-    const url = "/"
-    const resultUrl = window.location.href;
+    const url = "https://lovelycat.netlify.app/"
+    const resultUrl = window.location.href; //url 주소 받아오기 위한 것
 
     console.log('ddd', resultUrl, url)
 
-    //권한 설정, 부여된 내 자바스크립트키 설정
+    //권한 설정, 부여된 내 자바스크립트키(init) 설정
     React.useEffect( ()=>{
         //여러번 인증 방지하기 위해
         Kakao.cleanup();

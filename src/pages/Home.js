@@ -16,11 +16,11 @@ const Home = () => {
     }
     return (
         <Wrapper>
-        <Header>헤더</Header>
+        <Header>집사 되기</Header>
         <Contents>
         <Title>나에게 맞는 주인님은?</Title>
         <LogoImage>
-            <img src={catImage} className="rounded-circle" width={350} height={350}></img>
+            <img alt="고양이 사진" src={catImage} className="rounded-circle" width={350} height={350}></img>
         </LogoImage>
         <Desc>MBTI를 기반으로 하는 나랑 잘 맞는 고양이 찾기</Desc>
         <Button style={{fontFamily : "mabinogi"}} onClick={handleClickButton}>TEST START!!</Button>

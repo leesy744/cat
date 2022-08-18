@@ -79,6 +79,8 @@ const Question = () => {
                 {/* button click시 ProgressBar 증가 */}
                 <Button onClick = {()=>handleClickButton(1, QuestionData[questionNo].type)} style={{width:"40%", minHeight:"200px", fontSize: "15pt"}}>{QuestionData[questionNo].answera}</Button>
                 <Button onClick = {()=>handleClickButton(0, QuestionData[questionNo].type)} style={{width:"40%", minHeight:"200px", fontSize: "15pt", marginLeft: "20px"}}>{QuestionData[questionNo].answerb}</Button>
+                <Button onClick = {()=>handleClickButton(1, QuestionData[questionNo].type)} style={{width:"40%", minHeight:"200px", fontSize: "15pt" }}>{QuestionData[questionNo].answerc}</Button>
+                <Button onClick = {()=>handleClickButton(0, QuestionData[questionNo].type)} style={{width:"40%", minHeight:"200px", fontSize: "15pt", marginLeft: "20px"}}>{QuestionData[questionNo].answerd}</Button>
             </ButtonGroup>
         </Wrapper>
     )
@@ -97,9 +99,5 @@ text-align: center;
 font-family: "mabinogi";
 `
 const ButtonGroup = styled.div`
-display: flex;
-flex-direction : row;
-align-items : center;
-justify-content : center;
-font-family: "mabinogi";
+
 `
